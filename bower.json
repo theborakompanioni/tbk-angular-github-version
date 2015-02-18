@@ -1,10 +1,13 @@
 {
   "name": "tbk-angular-github-version",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
     "tbk <theborakompanioni+angular-github-version@gmail.com>"
   ],
   "description": "a simple angular directive to display the latest version of a github repository",
+  "main": [
+    "main.js"
+  ],
   "keywords": [
     "angular",
     "directive",
