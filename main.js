@@ -12,7 +12,7 @@ angular.module('tbk.githubVersion', [])
         }).success(function(data) {
           if(angular.isArray(data) && data.length > 0) {
             var latest = data[data.length - 1];
-            var versionIndex = latest.ref.search(/(\d(\.)?){3}$/);
+            var versionIndex = latest.ref.search(/(\d(\.)?){3}.*$/);
             if(versionIndex > -1) {
               var version = latest.ref.substring(versionIndex, latest.ref.length);
               $scope.version = version;
